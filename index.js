@@ -15,7 +15,7 @@ const url = process.env.DB;
 // Enable CORS for all routes
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000","https://food-book-ruddy.vercel.app"],
   })
 );
 
