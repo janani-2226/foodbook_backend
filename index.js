@@ -10,12 +10,12 @@ const dotenv = require("dotenv").config();
 
 const app = express();
 const port = 5000;
-const url = "mongodb://localhost:27017";
+const url = process.env.DB;
 
 // Enable CORS for all routes
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: "http://localhost:3000",
   })
 );
 
